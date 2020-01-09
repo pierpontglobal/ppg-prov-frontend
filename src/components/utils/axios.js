@@ -32,6 +32,6 @@ axios.interceptors.response.use(function (response) {
   return Promise.reject(error);
 });
 
-axios.defaults.baseURL = 'https://ppg-prov.herokuapp.com/'
+axios.defaults.baseURL = 'http://localhost:3000/'
 
 export default axios;

@@ -19,7 +19,7 @@ class RegisterForm extends React.Component {
           password_confirmation: values.password_confirm,
         }).then((response) => {
           loading();
-          if (response.status === 200) {
+          if (response.status === 201) {
             message.success('User created', 1, () => {
               window.location = '/login'
             })
