@@ -5,12 +5,11 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import LoginForm from "../components/loginForm"
 import logo from '../images/dark.svg'
-import { Logo, LoginView } from '../components/util'
 
 const LoginPage = () => (
   <Layout>
     <SEO title="Login" description="Provisioning site" />
-    <LoginView style={{
+    <div style={{
       minHeight: '300px',
       padding: '20px',
       position: 'relative',
@@ -26,7 +25,7 @@ const LoginPage = () => (
         height: '100px'
       }} src={logo} />
       <LoginForm />
-    </LoginView>
+    </div>
   </Layout>
 )
 

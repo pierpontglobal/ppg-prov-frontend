@@ -32,6 +32,6 @@ axios.interceptors.response.use(function (response) {
   return Promise.reject(error);
 });
 
-axios.defaults.baseURL = 'http://localhost:3000/'
+axios.defaults.baseURL = process.env.SRV_API
 
 export default axios;
